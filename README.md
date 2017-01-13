@@ -1,5 +1,5 @@
 # Static Site Generator Boilerplate 
-Static Site Generator Boilerplate is a NodeJS project which lets you use helpful things like LESS, CommonJS, and EJS to create static files website.
+Static Site Generator Boilerplate is a NodeJS project which lets you use helpful things like LESS (for CSS), CommonJS (for JavaScript), and EJS (for HTML) to create a static file website.
 
 To make changes to the site, follow the compilation instructions below and deploy the files in `dist/` to AWS (or do whatever you want to do with them).
 
