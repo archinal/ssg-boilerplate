@@ -1,0 +1,11 @@
+# Environment
+.idea/
+
+# Third party
+node_modules/
+
+# Compiled
+dist/
+
+# NodeJS
+*.log
