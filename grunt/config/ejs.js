@@ -1,9 +1,14 @@
+var templateVariables = {
+    title: 'My Website'
+};
+
 module.exports = {
     all: {
-      options: {
-        title: 'My Website'
-      },
-      src: 'pages/index.ejs',
-      dest: 'dist/index.html'
+      options: templateVariables,
+      cwd: 'pages/',
+      src: ['*.ejs'],
+      dest: 'dist/',
+      expand: true,
+      ext: '.html'
     }
 };
