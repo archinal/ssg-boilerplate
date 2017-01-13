@@ -1,9 +1,9 @@
 # Static Site Generator Boilerplate 
-Static Site Generator Boilerplate is a NodeJS project which compiles a simple static files site.
+Static Site Generator Boilerplate is a NodeJS project which lets you use helpful things like LESS, CommonJS, and EJS to create static files website.
 
 To make changes to the site, follow the compilation instructions below and deploy the files in `dist/` to AWS (or do whatever you want to do with them).
 
-## Developing
+## Requirements
 Requires:
 - NodeJS 6.9.2 or higher
 - Grunt 0.4.5 or higher (`npm install -g grunt-cli`)  
@@ -24,6 +24,7 @@ $ grunt
 ```
 
 ## Using the boilerplate
+- Clone this repository to wherever you want. This will now be the foundation of your website.
 - Write your JavaScript inside the `js/` directory. Each `.js` file directly inside this directory will be passed through Browserify, so you're allowed to use CommonJS style includes. A browserified and uglified version of each of these files is then put inside `dist/js`.
 - Write your CSS as LESS inside the `styles/` directory
 - Write your HTML pages as EJS inside the `pages/` directory. Each .ejs file directly inside the `pages/` directory will be turned
