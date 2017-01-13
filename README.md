@@ -24,7 +24,7 @@ $ grunt
 ```
 
 ## Using the boilerplate
-- Write your JavaScript inside the `js/` directory.
+- Write your JavaScript inside the `js/` directory. Each `.js` file directly inside this directory will be passed through Browserify, so you're allowed to use CommonJS style includes. A browserified and uglified version of each of these files is then put inside `dist/js`.
 - Write your CSS as LESS inside the `styles/` directory
 - Write your HTML pages as EJS inside the `pages/` directory. Each .ejs file directly inside the `pages/` directory will be turned
 into a HTML file, so write your partials inside the `pages/partials/` directory instead.

@@ -10,7 +10,7 @@ module.exports = {
     },
     js: {
         files: ['js/**/*.js'],
-        tasks: ['uglify'],
+        tasks: ['browserify', 'uglify'],
         livereload: true
     },
     staticFiles: {

@@ -6,5 +6,5 @@ module.exports = function (grunt) {
 
     // ### Day to day running tasks ###
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('bundle', ['ejs', 'less', 'uglify', 'copy']);
+    grunt.registerTask('bundle', ['ejs', 'less', 'browserify', 'uglify', 'copy']);
 };

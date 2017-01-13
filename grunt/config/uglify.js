@@ -3,8 +3,11 @@ module.exports = {
         options: {
             overwrite: true
         },
-        files: {
-            'dist/js/main.js': ['js/main.js']
-        }
+        files: [{
+            expand: true,
+            cwd: 'dist/js/',
+            src: '*.js',
+            dest: 'dist/js/'
+        }]
     }
 };

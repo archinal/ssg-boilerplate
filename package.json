@@ -21,5 +21,8 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-ejs": "^0.3.0",
     "load-grunt-config": "~0.17.2"
+  },
+  "devDependencies": {
+    "grunt-browserify": "^5.0.0"
   }
 }
