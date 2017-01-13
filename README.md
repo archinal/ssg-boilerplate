@@ -28,7 +28,7 @@ $ grunt
 - Write your CSS as LESS inside the `styles/` directory
 - Write your HTML pages as EJS inside the `pages/` directory. Each .ejs file directly inside the `pages/` directory will be turned
 into a HTML file, so write your partials inside the `pages/partials/` directory instead.
-- If you need variables or functions for your EJS, include them inside the `templateVariables` object in `grunt/config/ejs.js`
+- If you need variables or functions for your EJS, include them inside `Config.TemplateData` object in `config.js`. Note that changes to this file will require you to restart `grunt` if it is already running.
 - After compiling the resources (see above), everything is compiled to the `dist/` directory
 - Extra static files should be put in `static/`, and will be simply copied into `dist/static/`
 

@@ -1,10 +1,8 @@
-var templateVariables = {
-    title: 'My Website'
-};
+var Config = require('../../config');
 
 module.exports = {
     all: {
-      options: templateVariables,
+      options: Config.TemplateData,
       cwd: 'pages/',
       src: ['*.ejs'],
       dest: 'dist/',
