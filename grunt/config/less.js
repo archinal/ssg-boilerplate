@@ -5,7 +5,7 @@ module.exports = {
             compress: true
         },
         files: {
-            "dist/css/main.css": "styles/**/*.less"
+            "dist/styles/main.css": "styles/**/*.less"
         }
     }
 

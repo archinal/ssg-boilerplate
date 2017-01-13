@@ -25,19 +25,15 @@ $ grunt
 
 ## Using the boilerplate
 - Clone this repository to wherever you want. This will now be the foundation of your website.
-- Write your JavaScript inside the `js/` directory. Each `.js` file directly inside this directory will be passed through Browserify, so you're allowed to use CommonJS style includes. A browserified and uglified version of each of these files is then put inside `dist/js`.
-- Write your CSS as LESS inside the `styles/` directory
-- Write your HTML pages as EJS inside the `pages/` directory. Each .ejs file directly inside the `pages/` directory will be turned
+- Write your JavaScript inside the `js/` directory.
+Each `.js` file directly inside this directory will be passed through Browserify, so you're allowed to use CommonJS style includes (but you don't have to). A browserified and uglified version of each of these files is then put inside `dist/js`.
+- Write your styles as CSS or LESS inside the `styles/` directory.
+The LESS files will be compiled into CSS, and all the CSS files will be placed in `dist/styles`.
+- Write your HTML pages as plain HTML or as EJS inside the `pages/` directory. Each .ejs file directly inside the `pages/` directory will be turned
 into a HTML file, so write your partials inside the `pages/partials/` directory instead.
 - If you need variables or functions for your EJS, include them inside `Config.TemplateData` object in `config.js`. Note that changes to this file will require you to restart `grunt` if it is already running.
-- After compiling the resources (see above), everything is compiled to the `dist/` directory
-- Extra static files should be put in `static/`, and will be simply copied into `dist/static/`
-
-## The stack
-- Javascript, LESS (CSS) and EJS (HTML) contained in `js/`, `styles/` and `pages/` respectively  
-- Everything is compiled to the `dist/` directory  
-- Grunt is used to compile everything  
-- Static files should be put in `static/`, and will be simply copied into `dist/static/`  
+- Extra static files (such as images) should be put in `static/`.
+- After compiling the resources (see above), everything is compiled to the `dist/` directory.
 
 ## Deployment to AWS
 - If you don't have it, `pip install awscli`

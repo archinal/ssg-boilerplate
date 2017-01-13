@@ -14,12 +14,17 @@ module.exports = {
         livereload: true
     },
     staticFiles: {
-        files: ['static/**/*'],
+        files: ['static/**/*', 'styles/**/*.css'],
         tasks: ['copy'],
         livereload: true
     },
+    plainHTML: {
+        files: ['pages/**/*.html'],
+        tasks: ['copy:plainHTML'],
+        livereload: true
+    },
     ejs: {
-        files: ['pages/**/*'],
+        files: ['pages/**/*.ejs'],
         tasks: ['ejs'],
         livereload: true
     }
